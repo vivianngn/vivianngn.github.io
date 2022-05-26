@@ -67,7 +67,7 @@ body {
   display: inline-block;
   color: black;
   padding: 0;
-  line-height: 120%;
+  line-height: 200%;
   -webkit-transition: color ease 0.3s;
   transition: color ease 0.3s;
 }
