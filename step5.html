@@ -1,1 +1,164 @@
-
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" type="text/css" href="example.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700"/>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+      <style>
+         blockquote {
+         padding: 20px;
+         margin-left: 0px;
+         margin-right: 0px;
+         border-left:5px solid black;
+         border-right: 1px solid black;
+         border-top: 1px solid black;
+         border-bottom: 1px solid black;
+         background: white;
+         }
+         h1 {
+         font-family: 'DM Sans', serif;
+         font-weight: 500;
+         letter-spacing: -1px;
+         margin: 0;
+         font-size: 50px;
+         }
+         h2 {
+         font-family: 'DM Sans', serif;
+         font-weight: 500;
+         letter-spacing: -1px;
+         margin: 0;
+         font-size: 35px;
+         padding-top: 20px;
+         }
+         h3 {
+         padding-top: 15px;
+         }
+      </style>
+   </head>
+   <div id="pageContainer">
+      <a href="home.html" class="link-2"><strong>HOME</strong></a><br /><br />
+      <h1>Low-Fidelity<span style="font-family:Playfair Display"> Prototype</span></h1>
+      <br />
+      <h2 id="description-of-project-">Description of Project 📖</h2>
+      <h3 id="website-description">Website Description</h3>
+      <p>My goal for this project is to design a website/platform where people of all backgrounds and ages have the ability to learn how to play an instrument at any level without any cost, can view pre-recorded lessons with instrument-learning basics, can schedule live lessons with a teacher they can match with, and have unlimited access to a high quality, large database of sheet music for any instrument.</p>
+      <h3 id="prior-user-research">Prior User Research</h3>
+      <p><strong>Heuristic Evaluation:</strong></p>
+      <ul>
+         <li>During heuristic evaluation, I analyzed two competitor websites with similar goals: Lessonface and Blue Bear School of Music. I found issues with their current design and proposed ways to better my website design by learning from the usability issues from the heuristic evaluation. Some significant issues I found in Lessonface, in particular, were that you cannot remove an instrument category when searching for music lessons which leads to confusion, the existence of an element that appears to be a button but is not a button, and the fact that important links lied under the nested menu.</li>
+      </ul>
+      <p><strong>Pilot Usability Testing:</strong></p>
+      <ul>
+         <li>I tested the significant usability issues found from heuristic evaluation of Lessonface, my main competitior website. These included:</li>
+      </ul>
+      <table>
+         <thead>
+            <tr>
+               <th style="text-align:left">Heuristic Being Tested</th>
+               <th style="text-align:left">Usability problem</th>
+               <th style="text-align:left">Task scenario</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td style="text-align:left">User control and freedom</td>
+               <td style="text-align:left">Cannot remove instrument category when searching for music lessons, confusion</td>
+               <td style="text-align:left">Finding a clarinet teacher, then changing to flute teacher</td>
+            </tr>
+            <tr>
+               <td style="text-align:left">Consistency and standards</td>
+               <td style="text-align:left">An element that appears to be a button but is not a button</td>
+               <td style="text-align:left">Find the FAQs page and phone number from the top navigation</td>
+            </tr>
+            <tr>
+               <td style="text-align:left">Recognition rather than recall</td>
+               <td style="text-align:left">Important links under nested menu</td>
+               <td style="text-align:left">Find the &quot;About&quot; page under the nested menu</td>
+            </tr>
+         </tbody>
+      </table>
+      <p><strong>Contextual Inquiry and Interview:</strong></p>
+      <ul>
+         <li>
+            Next, I performed contextual inquiry by using <strong>interview, participatory interaction</strong> of the user and <strong>observation</strong> as my primary research methods. I spoke with someone who is experienced with learning instruments and looking for sheet music online. Some insights were that:
+            <ul>
+               <li>Having a forum (like Reddit) where people can share knowledge is helpful</li>
+               <li>Would be helpful to have a feature to digitally write on sheet music, and an automatic scroll</li>
+               <li>Not all people have connections to teachers and easy access to materials</li>
+            </ul>
+         </li>
+      </ul>
+      <h3 id="personas">Personas</h3>
+      <p>My two personas were <strong>Diego Jacinto</strong> and <strong>Nidhi Singh</strong>.</p>
+      <ul>
+         <li>Diego Jacinto is a busy manager from an underserved background trying to relearn piano. Diego’s journey mainly included searching up sheet music in the database.</li>
+         <li>Nidhi Singh is a mother of a 10-year old daughter who works as a nurse, but is worried about her daughter’s upbringing. Nidhi’s journey included searching for both piano and violin teachers with specific filter options, and scheduling different lesson times for both.</li>
+      </ul>
+      <p>Learn more about them, their scenarios, and their journeys <a href="https://github.com/vivianngn/DH110-VivianNguyen/blob/main/Assignment-04/Persona-and-Scenarios.md" target="_blank" class="link-2">here</a>.</p>
+      <h3 id="features">Features</h3>
+      <p>The design features I would like to include are:</p>
+      <ol>
+         <li><strong>Onboarding</strong> for new users who would like to know how to use the website/platform</li>
+         <li><strong>Sheet music database</strong> that is accessible, high quality, and free for use</li>
+         <li><strong>Teacher finding/search feature</strong> with a high level filter</li>
+         <li><strong>Scheduling lessons feature</strong> with a calendar and confirmation screen</li>
+         <li><strong>Pre-recorded lessons database and search feature</strong></li>
+      </ol>
+      <h3 id="purpose-of-low-fidelity-prototyping">Purpose of Low-Fidelity Prototyping</h3>
+      <p>The purpose of low-fidelity prototyping is to lay-out the features I proposed and researched on previously. I can see how a user interacts with my design, considering how I initially think my design should be. With low-fi prototyping and testing, I can figure out big issues in my design before I start the high-fidelity prototypes.</p>
+      <h2 id="wireframes-">Wireframes 🖌️</h2>
+      <p><img src="https://user-images.githubusercontent.com/69706820/167241021-000bd928-2c39-453d-b675-9efafe6916e7.png" alt="image">
+         <img src="https://user-images.githubusercontent.com/69706820/167241024-0c098bf4-f05f-4eca-851b-64d034fa554d.png" alt="image">
+         <img src="https://user-images.githubusercontent.com/69706820/167241028-16aa544e-486a-4b0c-be34-cda5b97be457.png" alt="image">
+         <img src="https://user-images.githubusercontent.com/69706820/167241035-5c55a7b5-e575-420e-bf29-680ae5b6ba0d.png" alt="image">
+         <img src="https://user-images.githubusercontent.com/69706820/167241046-32d47c10-8f04-4855-a59d-d6cdd0ce6262.png" alt="image">
+      </p>
+      <h2 id="wireflow-">Wireflow 👩‍🎨</h2>
+      <p><img src="https://user-images.githubusercontent.com/69706820/167241060-d399d044-434a-4a3e-bd57-b86573140516.png" alt="image">
+         <img src="https://user-images.githubusercontent.com/69706820/167241066-0a4dc879-db8d-40f8-a965-d2d433e5bca9.png" alt="image">
+         <img src="https://user-images.githubusercontent.com/69706820/167241073-e8ddea29-d667-4070-b1b3-a0b734800e71.png" alt="image">
+         <img src="https://user-images.githubusercontent.com/69706820/167241076-3a589df6-271f-4d1b-a293-8a453e9afbbd.png" alt="image">
+         <img src="https://user-images.githubusercontent.com/69706820/167241078-47d74f00-eaf3-4778-8af8-a7a1538581ae.png" alt="image">
+      </p>
+      <h2 id="testing-the-wireflow-">Testing the Wireflow 🧪</h2>
+      <p>I asked my friend to go through his journey of the low-fidelity wireframes. The journeys he took are in pink.
+         <img src="https://user-images.githubusercontent.com/69706820/167241143-2cceadc7-4c71-4021-9f20-85b16d65036f.png" alt="image">
+         <img src="https://user-images.githubusercontent.com/69706820/167241147-fac7b0e8-d1ec-442a-bc38-32d0a20d6410.png" alt="image">
+         <img src="https://user-images.githubusercontent.com/69706820/167241153-f4f3fc0d-f078-448c-a9d8-65cae2df1b89.png" alt="image">
+         <img src="https://user-images.githubusercontent.com/69706820/167241159-473431c4-4976-43c3-a18c-c73c5ef33f10.png" alt="image">
+         <img src="https://user-images.githubusercontent.com/69706820/167241165-8823c8ac-90bc-4ba3-92a0-4180e4de994e.png" alt="image">
+      </p>
+      <h2 id="notes-from-the-testing-">Notes from the testing 📝</h2>
+      <p><strong>Onboarding</strong></p>
+      <ul>
+         <li>for onboarding screen #1, for sheet music, wants the option to indicate instrument too</li>
+         <li>says that the onboarding makes sense and is simple</li>
+         <li>may be missing something for step #4</li>
+      </ul>
+      <p><strong>Sheet music database</strong></p>
+      <ul>
+         <li>tab has the most popular sheet music for piano, which is nice</li>
+         <li>likes advanced search filtering, wants genre too</li>
+         <li>for page; wants download pdf and markup tools features</li>
+      </ul>
+      <p><strong>Teacher search</strong></p>
+      <ul>
+         <li>likes availability multi-select, maybe have times available for teacher as well</li>
+      </ul>
+      <p><strong>Scheduling a lesson</strong></p>
+      <ul>
+         <li>calendar is not clear in scheduling a lesson. maybe have clear indication of days and times unavailable</li>
+         <li>have additional comments feature</li>
+      </ul>
+      <p><strong>Academy</strong></p>
+      <ul>
+         <li>have most popular courses separated by instrument</li>
+         <li>would like to have level 1-5 subsections</li>
+         <li>include title of course and level of course</li>
+      </ul>
+      <h2 id="reflection-">Reflection 💭</h2>
+      <p>I gave my tester the designs and asked him to logically go through the prototype according to what he wanted to do with the website. He talked aloud and suggested things to add or change, but overall did not have any difficulty going through the low-fidelity prototype. I found that directly hand-drawing the wireframes and flow was a lot more difficult than making them in Figma. In the past, for my UX projects, I would create my low-fidelity screens with Figma. However, I think that drawing them by hand makes me think about the journey harder, which is a benefit. Next time, I think I would make them a bit more detailed. When my tester went through the prototype, he found that there were a couple features that were missing or lacking something. From the notes I took of his journey, I will make quite a few changes to my design. First, in the onboarding, I will add an option to indicate what instrument the user is using if they are looking for sheet music. For the sheet music page, I will add more features when viewing it. I will also make the calendar for scheduling the lessons more detailed, perhaps with a legend. Lastly, for the pre-recorded lessons database, I will separate the courses by difficulty level so that the user can find what they are looking for faster.</p>
+   </div>
+</html>
