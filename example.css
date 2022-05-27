@@ -229,6 +229,7 @@ table {
   font-family: "DM Sans", sans-serif;
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 th {
