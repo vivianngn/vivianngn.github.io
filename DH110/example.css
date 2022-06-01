@@ -253,7 +253,44 @@ td, th {
 img {
   max-width: 100%;
 }
+button {
+  appearance: button;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: #ffffff 4px 4px 0 0, black 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  overflow: visible;
+  padding: 12px 20px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 
+button:focus {
+  text-decoration: none;
+}
+
+button:hover {
+  text-decoration: none;
+  background-color: #333333;
+}
+
+button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
 @media (max-width: 768px) {
 .previews-big-box {
   margin-left: -20px;
