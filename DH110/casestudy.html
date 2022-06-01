@@ -1,1 +1,411 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="/example.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      blockquote {
+        padding: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-left: 5px solid black;
+        border-right: 1px solid black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        background: white;
+      }
+      h1 {
+        font-family: "DM Sans", serif;
+        font-weight: 500;
+        letter-spacing: -1px;
+        margin: 0;
+        font-size: 50px;
+      }
+      h2 {
+        font-family: "DM Sans", serif;
+        font-weight: 500;
+        letter-spacing: -1px;
+        margin: 0;
+        font-size: 35px;
+        padding-top: 20px;
+        padding-bottom: 1.3rem;
+      }
+      h3 {
+        padding-bottom: 1rem;
+      }
+      p {
+        padding-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pageContainer">
+      <a href="/DH110/home.html" class="link-2"><strong>HOME</strong></a
+      ><br /><br />
+      <h1>
+        Musical-u <span style="font-family: Playfair Display">Case Study</span>
+      </h1>
+      <br />
+      <h2>Introduction</h2>
+      <p>
+        Many older adults believe that mastering a new musical instrument has
+        little reputation for adults. Similar to learning a foreign language,
+        learning an instrument is commonly seen as something that must be
+        embedded during the formative (younger) years, otherwise the learner
+        will be hopelessly behind, if not simply hopeless. It is believed that
+        learning becomes much harder past the developmental stage of growth, so
+        many individuals feel disheartened to start learning. As a child, I took
+        a year of piano lessons, yet it was too costly for me to continue,
+        coming from a disadvantaged background.
+      </p>
+      <p>
+        Now that I am an adult, with desires to continue the piano education I
+        once had, I want to help others who find themselves wanting to learn an
+        instrument past their formative years, and especially those who come
+        from impoverished backgrounds and cannot afford traditional music
+        teaching.
+      </p>
+      <h2>Design Statement</h2>
+      <p>
+        With my own personal background concerning the inaccessibility of music,
+        I found that I wanted to create a free-of-charge online music school
+        (conceptually in the form of a non-profit), that includes a sheet music
+        database, lesson booking and matching with a teacher, and pre-recorded
+        lessons.
+      </p>
+      <p>Therefore, my question is:</p>
+      <blockquote>
+        <h3 style="font-size: 20px">
+          How might we design a free, online music learning platform that serves
+          people of all ages and backgrounds, accessible to those of underserved
+          communities?
+        </h3>
+      </blockquote>
+      <h2>Competitor Analysis</h2>
+      <h3>Heuristic Evaluation</h3>
+      <p>
+        I conducted competitor analysis of similar websites, first through
+        <strong>heuristic evaluation.</strong> Based on the 10
+        heuristics/severity ratings from the
+        <a
+          href="https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/"
+          class="link-2"
+          >NN Group</a
+        >, I evaluated two websites:
+        <a href="https://www.lessonface.com/" class="link-2">Lessonface</a>, and
+        <a href="https://bluebearmusic.org/" class="link-2">
+          Blue Bear School of Music</a
+        >
+        to see how they were advertising and designing their services.
+      </p>
+      <img
+        src="https://user-images.githubusercontent.com/69706820/161950278-9d344d35-a78e-442c-bff0-48f4457500a2.png"
+        alt="Lessonface"
+      />
+      <p>
+        I chose Lessonface as a competitor application because this website
+        displayed many features I envisioned to include. These include the
+        feature to personally match with a suitable teacher, reviews, and
+        individual pages for teachers with information. However, I would like to
+        focus only on instrument learning, and emphasize more on the idea that
+        everyone is welcome to learn instruments. I wanted to use Lessonface as
+        inspiration and to help me decide what to build upon.
+      </p>
+      <p>
+        From analyzing Lessonface, I found that I would like to add an
+        onboarding feature and to have a less cluttered hero section.
+      </p>
+      <p>
+        I chose Blue Bear School of Music because it is a nonprofit, so the
+        organization naturally has the same goal as me for my project idea.
+        Although I don't foresee my project working with an actual nonprofit, I
+        still think there are parallels between this organization and my
+        proposed project. There is a lot of room for improvement for Blue Bear's
+        website, design-wise.
+      </p>
+      <p>
+        There were many design choices that could be improved. On the surface,
+        there are many issues of color contrast, textual hierarchy, website
+        organization, and button styles. From my research, I decided that my
+        project will focus on having smarter design choices for accessibility.
+      </p>
+      <button onclick="window.location.href='/step1.html';">
+        Read more about the heuristic evaluation
+      </button>
+      <br />
+      <br />
+      <br />
+      <h3>Pilot Usability Testing</h3>
+      <p>
+        Following the heuristic evaluation, I wanted to learn more about the
+        potential usability problems Lessonface might've had. I conducted
+        usability testing using the heuristics and issues I highlighted from my
+        heuristic evaluation and created tasks accordingly.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align: left">Heuristic Being Tested</th>
+            <th style="text-align: left">Usability problem</th>
+            <th style="text-align: left">Task scenario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: left">User control and freedom</td>
+            <td style="text-align: left">
+              Cannot remove instrument category when searching for music
+              lessons, confusion
+            </td>
+            <td style="text-align: left">
+              Finding a clarinet teacher, then changing to flute teacher
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">Consistency and standards</td>
+            <td style="text-align: left">
+              An element that appears to be a button but is not a button
+            </td>
+            <td style="text-align: left">
+              Find the FAQs page and phone number from the top navigation
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">Recognition rather than recall</td>
+            <td style="text-align: left">Important links under nested menu</td>
+            <td style="text-align: left">
+              Find the &quot;About&quot; page under the nested menu
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Below is the UT session video on YouTube. I used Zoom to record the
+        session between me an my participant on my PC, while my participant was
+        sharing his screen through Zoom on his laptop.
+      </p>
+      <iframe
+        width="640"
+        height="360"
+        src="https://www.youtube.com/embed/jVuXDMX19BA"
+      ></iframe>
+      <p>
+        Following the UT, I found that my participant experienced the issues I
+        was testing. I was also introduced a new issue with the website's
+        responsive design, where information was omitted when the window became
+        smaller.
+      </p>
+      <button onclick="window.location.href='/step2.html';">
+        Read more about the pilot usability testing
+      </button>
+      <br />
+      <br />
+      <h2>User Research</h2>
+      <h3>Contextual Inquiry</h3>
+      <p>
+        After conducting heuristic evaluation and usability testing, I realized
+        that I needed to know more about the behavior, background, and user
+        experiences of my target audience.
+      </p>
+      <p>
+        I decided to use interview, participatory interaction of the user and
+        observation as my primary research methods. I chose to talk to someone
+        with a background in music and had a piano with learning resources
+        nearby.
+      </p>
+      <p>
+        <strong
+          >I had my subject perform three activities in front of me:</strong
+        >
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Activity 1 (general)</th>
+            <th>Activity 2 (music learning)</th>
+            <th>Activity 3 (music learning)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A general activity with a desire to work on a skill</td>
+            <td>Learning/brushing up on an instrument</td>
+            <td>Learning a song on an instrument of choice</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        My findings included that having a forum (like Reddit) where people can
+        share knowledge, a feature to digitally write on sheet music + an
+        automatic scroll would be helpful features to include. Additionally, I
+        found through our conversation that not all people have connections to
+        teachers and easy access to materials.
+      </p>
+      <button onclick="window.location.href='/step3.html';">
+        Read more about contextual inquiry
+      </button>
+      <br />
+      <br />
+      <h2>UX Storytelling</h2>
+      <h3>Persona + Usage Scenario</h3>
+      <p>
+        I decided on three features I would want to focus on for my personas,
+        Diego and Nidhi.
+      </p>
+      <ol>
+        <li>
+          <strong>Sheet music database</strong> that is accessible, high
+          quality, and free
+        </li>
+        <li>
+          <strong>Teacher finding/search feature</strong> with a high level
+          filter
+        </li>
+        <li>
+          <strong>Scheduling lessons feature</strong> with a calendar and
+          confirmation
+        </li>
+      </ol>
+      <img src="https://i.imgur.com/dfsmM69.png" alt="Persona 2" />
+      <p>
+        I created two personas with their own stories to tell. By writing Whys
+        (Why are they using this product?) and Hows (How are they using this
+        product?), I was able to insert myself into my potential users' shoes.
+      </p>
+      <button onclick="window.location.href='/step4.html';">
+        Read more about the personas + usage scenarios
+      </button>
+      <br />
+      <br />
+      <h2>Low-Fidelity Prototype</h2>
+      <p>
+        I first designed my features, wireframes, and prototype with pencil and
+        paper. Using information gathered from prior research, I was able to
+        start ideating my platform. After sketching out my prototype, I asked a
+        participant to go through the prototype and mark their journey. I also
+        acquired feedback on what to change or add for my high-fidelity
+        prototype.
+      </p>
+      <img
+        src="https://user-images.githubusercontent.com/69706820/167241073-e8ddea29-d667-4070-b1b3-a0b734800e71.png"
+        alt="Low-fidelity wireframe"
+      />
+      <br />
+      <br />
+      <button onclick="window.location.href='/step5.html';">
+        Read more about the low-fidelity prototype
+      </button>
+      <br />
+      <br />
+      <h2>Interface Design System</h2>
+      <p>
+        I used my paper prototype as a reference to create this design. First, I
+        used Figma and created a frame with a custom size. I then laid out my
+        components from the paper prototype. I then created the logo for my
+        proposed service, Musical-u. I decided to go with a cool-toned color
+        palette (purple/blue), avoiding warm tones like red, which is an
+        alerting color, and yellow, which is difficult to design around because
+        of contrast reasons. After coming up with the logo and color palette and
+        checking its contrast ratios, I was able to come up with a fairly high
+        quality design. Then, I made variations according to options I preferred
+        for typography, shape, and light/dark mode.
+      </p>
+      <img
+        src="https://user-images.githubusercontent.com/69706820/167878028-2f0d01ff-5cac-4eff-8912-672863541917.png"
+        alt="image"
+      />
+      <iframe
+        style="border: 1px solid rgba(0, 0, 0, 0.1)"
+        width="800"
+        height="450"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fo4T4DzlharIuUzT96qH5uf%2FDH-110-Project---Vivian-Nguyen%3Fnode-id%3D0%253A1"
+        allowfullscreen
+      ></iframe>
+      <p>
+        <a
+          href="https://www.figma.com/file/o4T4DzlharIuUzT96qH5uf/DH-110-Project---Vivian-Nguyen?node-id=0%3A1"
+          target="_blank"
+          class="link-2"
+          >Link to Figma File</a
+        >
+        with my screen design variations.
+      </p>
+      <button onclick="window.location.href='/step6.html';">
+        Read more about the interface design system
+      </button>
+      <br />
+      <br />
+      <h2>High-Fidelity Prototype</h2>
+      <p>
+        After creating my low-fidelity prototype and finalizing my interface
+        design system, I was ready to start designing my high-fidelity
+        prototype, where I could visualize my fleshed out application. I
+        utilized Figma to first create the design system, and then incorporate
+        it with all of the tasks I have proposed by creating the remaining
+        wireframes. Using the feedback I received from the cognitive walkthrough
+        we did in class with two other students, as well as my impression
+        testing and feedback from the low-fidelity prototype user testing, I was
+        able to create my final designs.
+      </p>
+      <p>My prototype supports these main features:</p>
+      <blockquote>
+        <ol>
+          <li><strong>Signing up + Onboarding</strong></li>
+          <li>
+            Viewing and searching through a
+            <strong>sheet music database</strong>, <strong>markup</strong> of
+            sheet music
+          </li>
+          <li>
+            <strong>Teacher search</strong> and
+            <strong>booking lessons through a modal pop-up</strong>
+          </li>
+          <li>
+            Searching through the Academy with <strong>courses</strong> that
+            include <strong>pre-recorded lessons</strong>
+          </li>
+        </ol>
+      </blockquote>
+      <p>Additionally, my prototype supports:</p>
+      <blockquote>
+        <ol>
+          <li>Viewing the <strong>homepage</strong> signed in/signed out</li>
+          <li><strong>Signing in</strong></li>
+        </ol>
+      </blockquote>
+      <iframe
+        style="border: 1px solid rgba(0, 0, 0, 0.1)"
+        width="800"
+        height="450"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fo4T4DzlharIuUzT96qH5uf%2FDH-110-Project---Vivian-Nguyen%3Fpage-id%3D32%253A613%26node-id%3D32%253A614%26viewport%3D179%252C251%252C0.03%26scaling%3Dscale-down-width%26starting-point-node-id%3D32%253A614"
+        allowfullscreen
+      ></iframe>
+      <p>
+        <a
+          href="https://www.figma.com/proto/o4T4DzlharIuUzT96qH5uf/DH-110-Project---Vivian-Nguyen?page-id=32%3A613&amp;node-id=32%3A614&amp;viewport=-1873%2C-2543%2C0.48&amp;scaling=scale-down&amp;starting-point-node-id=32%3A614"
+          target="_blank"
+          class="link-2"
+          >Link to Figma Prototype</a
+        >, clickable prototype of the tasks
+      </p>
+      <br />
+      <button onclick="window.location.href='/step6.html';">
+        Read more about the high-fidelity prototype
+      </button>
+      <br />
+      <br />
+      <h2>Conclusion</h2>
+      <h3>What I have learned</h3>
+      <p></p>
+    </div>
+  </body>
+</html>
